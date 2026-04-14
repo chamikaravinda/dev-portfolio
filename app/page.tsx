@@ -2,6 +2,7 @@ import React from 'react';
 import Background from '@/app/components/react-bits/Background';
 import Home from "@/app/sections/Home";
 import About from "@/app/sections/About";
+import Experience from "@/app/sections/Experience";
 import Contact from "@/app/sections/Contact";
 
 const Page = () => {
@@ -23,6 +24,7 @@ const Page = () => {
             </div>
             <Home/>
             <About/>
+            <Experience/>
             <Contact/>
 
         </section>

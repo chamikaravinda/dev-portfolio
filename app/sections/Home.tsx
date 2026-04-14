@@ -6,8 +6,8 @@ const Home = () => {
     return (
         <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4 py-20">
             <div className="space-y-4 max-w-4xl">
-                <div className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">
-                    Available for new opportunities
+                <div className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-green-500/10 text-green-400 rounded-full border border-green-500/20">
+                    Open for something exsiting
                 </div>
                 <h1 className='text-6xl md:text-9xl font-bold bg-gradient-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] bg-clip-text text-transparent pb-2'>
                     Zigmatron Hub

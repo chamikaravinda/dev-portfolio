@@ -93,16 +93,20 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <LogoLoop
-                logos={techLogos}
-                speed={50}
-                direction="right"
-                logoHeight={40}
-                gap={60}
-                hoverSpeed={40}
-                scaleOnHover
-                ariaLabel="Technology partners"
-            />
+            <div className="max-w-7xl mx-auto px-6 pb-24">
+                <LogoLoop
+                    logos={techLogos}
+                    speed={50}
+                    direction="right"
+                    logoHeight={40}
+                    gap={60}
+                    hoverSpeed={40}
+                    scaleOnHover
+                    ariaLabel="Technology partners"
+                    fadeOut
+                    fadeOutColor="#000000"
+                />
+            </div>
         </div>
     );
 };
