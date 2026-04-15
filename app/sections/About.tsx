@@ -16,7 +16,7 @@ import {
 } from 'react-icons/si';
 import { FaJava, FaAws } from 'react-icons/fa6';
 import { GrOracle } from 'react-icons/gr';
-import LogoLoop from "@/app/components/react-bits/LogoLoop";
+import LogoLoop from "@/components/LogoLoop";
 
 
 const techLogos = [
@@ -45,8 +45,8 @@ const SkillCard = ({ icon, title, description }: { icon: any, title: string, des
 
 const About = () => {
     return (
-        <div className="h-dvh">
-            <div id="about" className="relative z-10 flex flex-col lg:flex-row items-center justify-center min-h-[80vh] px-6 pt-24 pb-12 gap-16 max-w-7xl mx-auto">
+        <section id="about" className="relative z-10 px-6 max-w-7xl mx-auto">
+            <div className="flex flex-col lg:flex-row items-center justify-center min-h-[80vh] gap-16 max-w-7xl">
                 <div className="flex flex-col items-start justify-center text-left flex-1 space-y-8">
                    <div className="space-y-4">
                        <div className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">
@@ -107,7 +107,7 @@ const About = () => {
                     fadeOutColor="#000000"
                 />
             </div>
-        </div>
+        </section>
     );
 };
 

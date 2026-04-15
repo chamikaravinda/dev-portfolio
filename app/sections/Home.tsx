@@ -4,12 +4,12 @@ import { GithubIcon, Linkedin01Icon, Mail01Icon } from '@hugeicons/core-free-ico
 
 const Home = () => {
     return (
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4 py-20">
+        <section id="home" className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4">
             <div className="space-y-4 max-w-4xl">
                 <div className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-green-500/10 text-green-400 rounded-full border border-green-500/20">
                     Open for something exsiting
                 </div>
-                <h1 className='text-6xl md:text-9xl font-bold bg-gradient-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] bg-clip-text text-transparent pb-2'>
+                <h1 className='text-5xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] bg-clip-text text-transparent pb-2'>
                     Zigmatron Hub
                 </h1>
                 <h2 className="text-2xl md:text-4xl font-semibold text-foreground mt-4">
@@ -75,7 +75,7 @@ const Home = () => {
                     <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
                 </svg>
             </div>
-        </div>
+        </section>
     );
 };
 
