@@ -8,7 +8,7 @@ const ExperienceItem = ({ role, company, location, period, description, defaultE
     const [isExpanded, setIsExpanded] = useState(defaultExpanded);
 
     return (
-        <div className="relative pl-8 pb-12 last:pb-0 group">
+        <div className="relative pl-8 pb-6 md:pb-12 last:pb-0 group">
             {/* Timeline Line */}
             <div className="absolute left-0 top-0 bottom-0 w-px bg-white/10 group-last:bg-transparent">
                 <div className="absolute top-2 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)] transition-all duration-300 group-hover:scale-125 group-hover:bg-blue-400" />
@@ -26,11 +26,11 @@ const ExperienceItem = ({ role, company, location, period, description, defaultE
                 >
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                         <div>
-                            <h4 className="text-xl font-bold text-foreground transition-colors group-hover:text-blue-400">{role}</h4>
-                            <p className="text-blue-400 font-medium">{company} | <span className="text-muted-foreground font-normal">{location}</span></p>
+                            <h4 className="text-lg md:text-xl font-bold text-foreground transition-colors group-hover:text-blue-400">{role}</h4>
+                            <p className="text-sm md:text-lg text-blue-400 font-medium">{company} | <span className="text-muted-foreground font-normal">{location}</span></p>
                         </div>
                         <div className="flex items-center gap-3 self-end md:self-center">
-                            <div className="inline-block px-3 py-1 text-[12px] font-bold tracking-tight uppercase bg-white/5 border border-white/10 rounded-full text-muted-foreground w-fit">
+                            <div className="inline-block px-3 py-1 text-[10px] md:text-[12px] font-bold tracking-tight uppercase bg-white/5 border border-white/10 rounded-full text-muted-foreground w-fit">
                                 {period}
                             </div>
                             <span className={`text-blue-500 transition-transform duration-500 ${isExpanded ? 'rotate-180' : ''}`}>
@@ -45,7 +45,7 @@ const ExperienceItem = ({ role, company, location, period, description, defaultE
                         <div className="pt-6 border-t border-white/5">
                             <ul className="grid grid-cols-1 gap-3">
                                 {description.map((item, index) => (
-                                    <li key={index} className="text-xl text-muted-foreground leading-relaxed flex gap-3 group/item">
+                                    <li key={index} className="text-sm md:text-xl text-muted-foreground leading-relaxed flex gap-3 group/item">
                                         <span className="text-blue-500 mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-blue-500/20 border border-blue-500/40 group-hover/item:bg-blue-400 transition-colors" />
                                         <span className="group-hover/item:text-foreground/80 transition-colors">{item}</span>
                                     </li>
@@ -142,7 +142,7 @@ const Experience = () => {
                             />
                         </h2>
                     </div>
-                    <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
+                    <p className="text-sm md:text-lg text-muted-foreground max-w-md leading-relaxed">
                         From a startup intern to engineering scalable solutions for a Fortune 500 giant.
                     </p>
                 </div>

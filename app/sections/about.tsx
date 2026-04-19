@@ -85,15 +85,15 @@ const About = () => {
                         </h2>
                     </div>
                     <div className="max-w-4xl space-y-4">
-                        <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+                        <p className="text-lg md:text-2xl text-muted-foreground leading-relaxed">
                             Software Engineer with <span className="text-foreground font-semibold">5+ years</span> of industry experience in developing and maintaining scalable software systems.
                         </p>
 
-                        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                        <p className=" md:text-xl text-muted-foreground leading-relaxed">
                             Skilled across the full stack, with strong expertise in <span className="text-blue-400 font-medium">JavaScript, React, Java, and Spring Boot</span>.
                         </p>
 
-                        <p className="text-lg text-muted-foreground leading-relaxed">
+                        <p className="text-sm text-muted-foreground leading-relaxed">
                             Currently contributing as an <span className="text-foreground font-semibold"> Associate Technical Lead </span> to the warehouse management system of the world&apos;s largest food distributor,
                             <span className="text-foreground font-semibold"> Sysco. </span> Started as a Junior Software Engineer, helping to modernize a legacy monolithic application.
                             Now collaborating with cross-functional teams to design and implement new features that have a multi-million-dollar impact.
@@ -111,7 +111,7 @@ const About = () => {
                                 spotlightColor="rgba(59, 130, 246, 0.15)"
                             >
                                 <div className="space-y-3">
-                                    <h4 className="text-lg font-semibold text-foreground">{category.title}</h4>
+                                    <h4 className="text-sm md:text-lg font-semibold text-foreground">{category.title}</h4>
                                     <div className="flex flex-wrap gap-2">
                                         {category.technologies.map((tech, techIndex) => (
                                             <span

@@ -6,17 +6,17 @@ import TextType from "@/components/text-type";
 const Home = () => {
     return (
         <section id="home" className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4">
-            <div className="space-y-4 max-w-4xl">
-                <div className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-green-500/10 text-green-400 rounded-full border border-green-500/20">
-                    Open for anything exciting
+            <div className="space-y-4 max-w-4xl mt-24 md:mt-16">
+                <div className="text-xs md:text-lg inline-block px-4 py-1.5 mb-4 font-medium bg-green-500/10 text-green-400 rounded-full border border-green-500/20">
+                    Open for something exciting
                 </div>
-                <h1 className='text-5xl md:text-8xl lg:text-8xl font-bold bg-linear-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] bg-clip-text text-transparent pb-2'>
+                <h1 className='text-4xl md:text-8xl lg:text-8xl font-bold bg-linear-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] bg-clip-text text-transparent pb-2'>
                     Zigmatron Hub
                 </h1>
-                <h3 className="md:text-xl text-muted-foreground font-light max-w-2xl mx-auto leading-relaxed">
+                <h3 className="text-sm md:text-xl text-muted-foreground font-light max-w-2xl mx-auto leading-relaxed">
                     Dev portfolio of
                 </h3>
-                <h2 className="text-2xl md:text-4xl font-semibold text-foreground">
+                <h2 className="text-xl md:text-4xl font-semibold text-foreground">
                     <ShinyText
                         text="Chamika Jayathilaka"
                         speed={3}
@@ -30,7 +30,7 @@ const Home = () => {
                         disabled={false}
                     />
                 </h2>
-                <h3 className="text-xl md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed">
+                <h3 className="text-sm md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed">
                     <TextType
                         text={["Crafting scalable enterprise solutions with Java & React.Obsessed with clean and " +
                         "maintainable code and the art of making complex things simple."]}
@@ -49,7 +49,7 @@ const Home = () => {
                     href="https://github.com/chamikaravinda"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group px-8 py-3.5 bg-gradient-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] text-white font-semibold rounded-full hover:shadow-[0_0_20px_rgba(42,183,244,0.4)] transition-all duration-300 flex items-center justify-center gap-2 active:scale-95"
+                    className="group px-4 md:px-8 text-[12px] md:text-lg py-3.5 bg-gradient-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] text-white font-semibold rounded-full hover:shadow-[0_0_20px_rgba(42,183,244,0.4)] transition-all duration-300 flex items-center justify-center gap-2 active:scale-95"
                 >
                     <HugeiconsIcon icon={GithubIcon} size={20} className="group-hover:rotate-12 transition-transform" />
                     GitHub Profile

@@ -13,11 +13,11 @@ const ContactInfo = ({ icon: Icon, label, value, href }: { icon: any; label: str
         <div>
             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
             {href ? (
-                <a href={href} target="_blank" rel="noopener noreferrer" className="text-lg font-medium hover:text-blue-400 transition-colors">
+                <a href={href} target="_blank" rel="noopener noreferrer" className="text-sm md:text-lg font-medium hover:text-blue-400 transition-colors">
                     {value}
                 </a>
             ) : (
-                <p className="text-lg font-medium">{value}</p>
+                <p className="text-sm md:text-lg font-medium">{value}</p>
             )}
         </div>
     </div>
@@ -74,12 +74,12 @@ const Contact = () => {
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-br from-foreground via-foreground to-foreground/40 bg-clip-text text-transparent tracking-tight">
                             What’s next? <br className="hidden md:block" /> Let’s talk.
                         </h2>
-                        <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
+                        <p className="text-sm md:text-lg text-muted-foreground max-w-md leading-relaxed">
                             Have a project in mind or just want to say hi? Feel free to reach out using the form or through my contact details!
                         </p>
                     </div>
 
-                    <div className="space-y-8">
+                    <div className="space-y-4 md:space-y-8">
                         <ContactInfo 
                             icon={FaMapMarkerAlt} 
                             label="Address" 
@@ -92,7 +92,7 @@ const Contact = () => {
                                 value="+94 71 361 2818" 
                                 href="tel:+94713612818"
                             />
-                            <div className="flex justify-center items-center gap-2 px-3 py-1.5 bg-green-500/10 text-green-500 rounded-full border border-green-500/20 text-sm font-medium w-fit">
+                            <div className="hidden md:flex justify-center items-center gap-2 px-3 py-1.5 bg-green-500/10 text-green-500 rounded-full border border-green-500/20 text-sm font-medium w-fit">
                                 <FaWhatsapp size={16} />
                                 <span>Available on WhatsApp </span>
                             </div>
@@ -199,7 +199,7 @@ const Contact = () => {
                             <div className="flex justify-center mt-4">
                                 <button
                                     type="submit"
-                                    className="px-8 py-3.5 bg-gradient-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] text-white font-semibold rounded-full hover:shadow-[0_0_20px_rgba(42,183,244,0.4)] transition-all duration-300 active:scale-95 w-full md:w-fit cursor-pointer flex items-center justify-center gap-2"
+                                    className="px-4 md:px-8 text-[12px] md:text-lg py-2.5 md:py-3.5 bg-gradient-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] text-white font-semibold rounded-full hover:shadow-[0_0_20px_rgba(42,183,244,0.4)] transition-all duration-300 active:scale-95 w-full md:w-fit cursor-pointer flex items-center justify-center gap-2"
                                 >
                                     <span>Send Message</span>
                                     <FaPaperPlane size={16} />
@@ -217,7 +217,7 @@ const Contact = () => {
                                 <a
                                     href="/cv.pdf"
                                     download="Chamika_Jayathilaka_CV.pdf"
-                                    className="group px-8 py-3.5 bg-gradient-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] text-white font-semibold rounded-full hover:shadow-[0_0_20px_rgba(42,183,244,0.4)] transition-all duration-300 active:scale-95 cursor-pointer flex items-center gap-2"
+                                    className="group px-4 md:px-8 text-[12px] md:text-lg py-2.5 md:py-3.5 bg-gradient-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] text-white font-semibold rounded-full hover:shadow-[0_0_20px_rgba(42,183,244,0.4)] transition-all duration-300 active:scale-95 cursor-pointer flex items-center gap-2"
                                 >
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-y-1 transition-transform">
                                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
