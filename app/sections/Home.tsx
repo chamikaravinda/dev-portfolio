@@ -30,7 +30,7 @@ const Home = () => {
                         disabled={false}
                     />
                 </h2>
-                <h3 className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl mx-auto leading-relaxed">
+                <h3 className="text-xl md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed">
                     <TextType
                         text={["Crafting scalable enterprise solutions with Java & React.Obsessed with clean and " +
                         "maintainable code and the art of making complex things simple."]}
@@ -46,7 +46,7 @@ const Home = () => {
 
             <div className="mt-12 flex flex-col sm:flex-row items-center gap-6">
                 <a
-                    href="https://github.com/chamikajay"
+                    href="https://github.com/chamikaravinda"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group px-8 py-3.5 bg-gradient-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] text-white font-semibold rounded-full hover:shadow-[0_0_20px_rgba(42,183,244,0.4)] transition-all duration-300 flex items-center justify-center gap-2 active:scale-95"
@@ -56,7 +56,7 @@ const Home = () => {
                 </a>
                 <div className="flex items-center gap-4">
                     <a
-                        href="https://linkedin.com/in/chamikajay"
+                        href="https://linkedin.com/in/chamikaravinda/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-3.5 border border-foreground/10 bg-white/5 text-foreground hover:bg-white/10 hover:border-foreground/20 rounded-full transition-all duration-300 hover:scale-110"
