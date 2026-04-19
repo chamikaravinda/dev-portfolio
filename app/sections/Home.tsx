@@ -1,23 +1,46 @@
-import React from 'react';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { GithubIcon, Linkedin01Icon, Mail01Icon } from '@hugeicons/core-free-icons';
+import ShinyText from "@/components/ShinneyText";
+import TextType from "@/components/TextType";
 
 const Home = () => {
     return (
         <section id="home" className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4">
             <div className="space-y-4 max-w-4xl">
                 <div className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-green-500/10 text-green-400 rounded-full border border-green-500/20">
-                    Open for something exsiting
+                    Open for anything exciting
                 </div>
-                <h1 className='text-5xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] bg-clip-text text-transparent pb-2'>
+                <h1 className='text-5xl md:text-8xl lg:text-8xl font-bold bg-linear-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] bg-clip-text text-transparent pb-2'>
                     Zigmatron Hub
                 </h1>
-                <h2 className="text-2xl md:text-4xl font-semibold text-foreground mt-4">
-                    Chamika Jayathilaka
+                <h3 className="md:text-xl text-muted-foreground font-light max-w-2xl mx-auto leading-relaxed">
+                    Dev portfolio of
+                </h3>
+                <h2 className="text-2xl md:text-4xl font-semibold text-foreground">
+                    <ShinyText
+                        text="Chamika Jayathilaka"
+                        speed={3}
+                        delay={0}
+                        color="#ffffff"
+                        shineColor="#b5b5b5"
+                        spread={120}
+                        direction="left"
+                        yoyo={false}
+                        pauseOnHover={false}
+                        disabled={false}
+                    />
                 </h2>
                 <h3 className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl mx-auto leading-relaxed">
-                    Associate Technical Lead at Sysco Labs.
-                    Crafting scalable enterprise solutions with Java & React.
+                    <TextType
+                        text={["Crafting scalable enterprise solutions with Java & React.Obsessed with clean and " +
+                        "maintainable code and the art of making complex things simple."]}
+                        typingSpeed={50}
+                        pauseDuration={1500}
+                        showCursor
+                        cursorCharacter="_"
+                        loop={false}
+                        cursorBlinkDuration={0.5}
+                    />
                 </h3>
             </div>
 
@@ -62,11 +85,11 @@ const Home = () => {
                 </div>
                 <div className="flex flex-col">
                     <span className="text-3xl md:text-4xl font-bold text-foreground">AWS</span>
-                    <span className="text-sm text-muted-foreground uppercase tracking-wider">Certified</span>
+                    <span className="text-sm text-muted-foreground uppercase tracking-wider">Expert</span>
                 </div>
                 <div className="flex flex-col">
-                    <span className="text-3xl md:text-4xl font-bold text-foreground">Lead</span>
-                    <span className="text-sm text-muted-foreground uppercase tracking-wider">Software Engineer</span>
+                    <span className="text-3xl md:text-4xl font-bold text-foreground">Full Stack</span>
+                    <span className="text-sm text-muted-foreground uppercase tracking-wider">Developer</span>
                 </div>
             </div>
 

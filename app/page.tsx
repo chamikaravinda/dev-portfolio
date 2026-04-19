@@ -1,14 +1,14 @@
-import React from 'react';
 import Background from '@/components/Background';
 import Home from "@/app/sections/Home";
 import About from "@/app/sections/About";
 import Experience from "@/app/sections/Experience";
 import Contact from "@/app/sections/Contact";
+import Footer from "@/app/sections/Footer";
 
 const Page = () => {
     return (
         <section>
-            <div style={{ width: '100%', height: '100vh', position: 'fixed' }}>
+            <div className="fixed inset-0 w-full h-screen -z-10">
                 <Background
                     mouseForce={20}
                     cursorSize={150}
@@ -26,6 +26,7 @@ const Page = () => {
             <About/>
             <Experience/>
             <Contact/>
+            <Footer/>
 
         </section>
     );
