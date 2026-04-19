@@ -1,7 +1,7 @@
 import { HugeiconsIcon } from '@hugeicons/react';
 import { GithubIcon, Linkedin01Icon, Mail01Icon } from '@hugeicons/core-free-icons';
-import ShinyText from "@/components/ShinneyText";
-import TextType from "@/components/TextType";
+import ShinyText from "@/components/shinney-text";
+import TextType from "@/components/text-type";
 
 const Home = () => {
     return (

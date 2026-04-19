@@ -1,12 +1,12 @@
-import LogoLoop from "@/components/LogoLoop";
+import LogoLoop from "@/components/logo-loop";
 import {
     SiReact, SiNextdotjs, SiTypescript, SiJavascript, SiSpringboot,
     SiJenkins, SiDocker, SiTerraform, SiDatadog, SiFirebase, SiLinux
 } from 'react-icons/si';
 import { FaJava, FaAws, FaDatabase } from 'react-icons/fa6';
 import { GrOracle } from 'react-icons/gr';
-import ShinyText from "@/components/ShinneyText";
-import SpotlightCard from "@/components/Card";
+import ShinyText from "@/components/shinney-text";
+import SpotlightCard from "@/components/card";
 
 const techLogos = [
     // Frontend
