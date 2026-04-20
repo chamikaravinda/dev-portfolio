@@ -44,12 +44,21 @@ const Navbar = () => {
                     : "bg-transparent border-b border-transparent"
             )}>
                 <nav className="max-w-7xl mx-auto px-4 md:px-6 h-12 md:h-14 flex items-center justify-between relative z-[60]">
-                    <a 
+                    {/* Desktop logo */}
+                    <a
                         href="#home" 
                         onClick={() => setIsOpen(false)}
-                        className="text-lg md:text-xl font-bold bg-gradient-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] bg-clip-text text-transparent"
+                        className="hidden md:flex text-xl font-bold bg-gradient-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] bg-clip-text text-transparent"
                     >
                         Zigmatron Hub
+                    </a>
+                    {/* Mobile logo */}
+                    <a
+                        href="#home"
+                        onClick={() => setIsOpen(false)}
+                        className="md:hidden font-bold bg-gradient-to-r from-[#0b13f4] to-[#821aea] bg-clip-text text-transparent"
+                    >
+                        ZH
                     </a>
                     
                     {/* Desktop Navigation */}

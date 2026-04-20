@@ -60,16 +60,16 @@ const techCategories = [
 
 const About = () => {
     return (
-        <section id="about" className="relative z-10 py-20 px-6 max-w-7xl mx-auto">
+        <section id="about" className="relative z-10 py-12 md:py-20 px-6 max-w-7xl mx-auto">
             {/* Description and Tech Stack Cards */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-18 mb-16">
                 {/* Left Side - Title and Description */}
                 <div className="space-y-6">
                     <div className="space-y-4">
-                        <div className="inline-block px-4 py-2 text-sm font-semibold tracking-wider uppercase bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">
+                        <div className="inline-block px-4 py-2 text-[8px] md:text-sm font-semibold tracking-wider uppercase bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">
                             Who Am I
                         </div>
-                        <h2 className="text-4xl md:text-6xl font-bold bg-linear-to-r from-foreground to-foreground/60 bg-clip-text text-transparent">
+                        <h2 className="text-2xl sm:text-4xl md:text-6xl font-bold bg-linear-to-r from-foreground to-foreground/60 bg-clip-text text-transparent">
                             <ShinyText
                                 text="About Me"
                                 speed={3}
@@ -107,7 +107,7 @@ const About = () => {
                         {techCategories.map((category, index) => (
                             <SpotlightCard
                                 key={index}
-                                className="bg-white/2 backdrop-blur-sm border-white/10 p-6"
+                                className="bg-white/2 backdrop-blur-sm border-white/10"
                                 spotlightColor="rgba(59, 130, 246, 0.15)"
                             >
                                 <div className="space-y-3">
@@ -116,7 +116,7 @@ const About = () => {
                                         {category.technologies.map((tech, techIndex) => (
                                             <span
                                                 key={techIndex}
-                                                className="px-3 py-1 text-sm bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20"
+                                                className="px-3 py-1 text-[8px] md:text-sm bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20"
                                             >
                                                 {tech}
                                             </span>
@@ -130,7 +130,23 @@ const About = () => {
             </div>
 
             {/* Tech Stack Section with Logo Loop */}
-            <div className="text-center">
+            {/* Mobile view*/}
+            <div className="md:hidden text-center">
+                <LogoLoop
+                    logos={techLogos}
+                    speed={50}
+                    direction="right"
+                    logoHeight={30}
+                    gap={40}
+                    hoverSpeed={40}
+                    scaleOnHover
+                    ariaLabel="Technology stack and expertise"
+                    fadeOut
+                    fadeOutColor="#000000"
+                />
+            </div>
+            {/* Desktop view*/}
+            <div className="hidden md:flex text-center">
                 <LogoLoop
                     logos={techLogos}
                     speed={50}

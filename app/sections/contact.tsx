@@ -68,10 +68,10 @@ const Contact = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
                 <div className="space-y-12">
                     <div className="space-y-6">
-                        <div className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">
+                        <div className="inline-block px-3 py-1 text-[8px] md:text-sm font-semibold tracking-wider uppercase bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">
                             Get in Touch
                         </div>
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-br from-foreground via-foreground to-foreground/40 bg-clip-text text-transparent tracking-tight">
+                        <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-br from-foreground via-foreground to-foreground/40 bg-clip-text text-transparent tracking-tight">
                             What’s next? <br className="hidden md:block" /> Let’s talk.
                         </h2>
                         <p className="text-sm md:text-lg text-muted-foreground max-w-md leading-relaxed">

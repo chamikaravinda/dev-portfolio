@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <section id="home" className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4">
             <div className="space-y-4 max-w-4xl mt-24 md:mt-16">
-                <div className="text-xs md:text-lg inline-block px-4 py-1.5 mb-4 font-medium bg-green-500/10 text-green-400 rounded-full border border-green-500/20">
+                <div className="text-[8px] sm:text-xs md:text-lg inline-block px-4 py-1.5 mb-4 font-medium bg-green-500/10 text-green-400 rounded-full border border-green-500/20">
                     Open for something exciting
                 </div>
                 <h1 className='text-4xl md:text-8xl lg:text-8xl font-bold bg-linear-to-r from-[#0b13f4] via-[#2ab7f4] to-[#821aea] bg-clip-text text-transparent pb-2'>
@@ -74,22 +74,22 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 border-t border-white/5 pt-12">
+            <div className="mt-8 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 border-t border-white/5 pt-12">
                 <div className="flex flex-col">
-                    <span className="text-3xl md:text-4xl font-bold text-foreground">5+</span>
-                    <span className="text-sm text-muted-foreground uppercase tracking-wider">Years Experience</span>
+                    <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">5+</span>
+                    <span className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider">Years Experience</span>
                 </div>
                 <div className="flex flex-col">
-                    <span className="text-3xl md:text-4xl font-bold text-foreground">10+</span>
-                    <span className="text-sm text-muted-foreground uppercase tracking-wider">Projects Delivered</span>
+                    <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">10+</span>
+                    <span className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider">Projects Delivered</span>
                 </div>
                 <div className="flex flex-col">
-                    <span className="text-3xl md:text-4xl font-bold text-foreground">AWS</span>
-                    <span className="text-sm text-muted-foreground uppercase tracking-wider">Expert</span>
+                    <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">AWS</span>
+                    <span className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider">Expert</span>
                 </div>
                 <div className="flex flex-col">
-                    <span className="text-3xl md:text-4xl font-bold text-foreground">Full Stack</span>
-                    <span className="text-sm text-muted-foreground uppercase tracking-wider">Developer</span>
+                    <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">Full Stack</span>
+                    <span className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider">Developer</span>
                 </div>
             </div>
 
