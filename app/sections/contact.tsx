@@ -43,7 +43,7 @@ const Contact = () => {
 
         const loadingToast = toast.loading("Sending message...");
 
-        const res = await fetch("/api/send", {
+        const res = await fetch("https://us-central1-zigmatron-hub.cloudfunctions.net/sendContactEmail", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
