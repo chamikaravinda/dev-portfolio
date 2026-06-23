@@ -67,12 +67,14 @@ const Experience = () => {
             location: "Colombo, Sri Lanka",
             period: "2024 August - Present",
             description: [
-                "Worked with the USA and UK teams to develop new features in both microservices and the frontend application.",
-                "Creating new AWS infrastructure to support European region expansion.",
-                "Fixing distributed tracing on existing Java components.",
-                "Handling production deployments with no downtime.",
-                "Assist other sub-teams in resolving infrastructure issues and provide guidance on domain-related questions during feature development.",
-                "Onsite hypercare production support to newly started warehouse in UK."
+                "Worked with the USA and UK teams to develop new features for the warehouse web application and for the handheld devices that are used by more than 15,000 users across 100+ warehouses.",
+                "Updated Terraform scripts and Jenkins pipelines to create new AWS infrastructure for UK expansion.",
+                "Provided on-site hyper care support for a newly launched warehouse in London for 2 weeks and managed to keep the operations running smoothly from the start.",
+                "Provided Level 3 production support to all the warehouses in the United States when needed.",
+                "Implemented an event-driven framework that supports both PL/SQL code and Java microservices using Kafka, AWS Lambda, and Event Bridge rules.",
+                "Guided other team members on both domain and technical issues during the design and development of new features.",
+                "Created Datadog alerts to identify production issues proactively, so that the warehouse operations can be carried out with minimal impact.",
+                "Optimized performance for long-running processes, reducing execution time by 60%"
             ]
         },
         {
@@ -81,13 +83,12 @@ const Experience = () => {
             location: "Colombo, Sri Lanka",
             period: "2022 August - 2024 August",
             description: [
-                "Worked on both warehouse management system modernization project and existing warehouse management application project.",
-                "Implementing new features in the legacy app, modernized app, and mobile backend that support Android and Windows mobile devices including unit tests, integration tests, and automation tests.",
-                "Keeping the Java components that support the main application up to date by addressing the production bugs, upgrading the Springboot libraries, implementing new features, testing them, and deploying them on the AWS.",
-                "Improving the quality of the QA automation suit by implementing reusable data creation classes and improving the stability of the test cases.",
-                "Worked on DevOps tasks like moving old Concourse jobs to Jenkins and updating terraform scripts.",
-                "Integrating HashiCorp Vault, a secret management system into the existing application to improve the application security.",
-                "Providing Level 3 support for the day-to-day operations and Hypercare support to the production deployment when needed."
+                "Identified and fixed issues on the Java backend and legacy PL/SQL that facilitate both Android and Windows CE handheld devices.",
+                "Implemented features in the modernized React web app by extracting the logic from the legacy Oracle Forms, with unit tests, integration tests, and automation tests.",
+                "Kept the Java components that support the main application up to date by addressing production bugs, upgrading Spring Boot libraries, implementing new features, testing them, and deploying them on AWS.",
+                "Assisted the QA team in improving the automation test suite by implementing reusable classes and improving the stability of test cases, which resulted in significantly reducing manual regression effort.",
+                "Made improvements in the DevOps area such as migrating old Concourse jobs to Jenkins and updating Terraform scripts.",
+                "Integrated the HashiCorp Vault secret manager into the legacy application to improve application security."
             ]
         },
         {
@@ -96,15 +97,13 @@ const Experience = () => {
             location: "Colombo, Sri Lanka",
             period: "2021 March - 2022 July",
             description: [
-                "Worked on the warehouse data transfer project and warehouse management system modernization project.",
-                "Kafka integration to the warehouse data transfer project.",
-                "API implementation to connect warehouse databases and Kafka consumers and producers.",
-                "Performance testing with JMeter and optimizing the application.",
-                "Integrating Datadog to the application to monitor application performance and logs.",
-                "Developed an email notification system to notify the failures in the production environment.",
-                "Implemented API endpoints to manipulate the Kafka message queue offset.",
-                "Implementing automation suit to test data syncing through Kafka queues.",
-                "Implementing features on the modernization project by gathering the requirements from the legacy codebase."
+                "Key member in the team that developed the data transfer system between warehouse databases using Kafka, unlocking cross-dock capabilities for Sysco.",
+                "Implemented a multi-tenant API to provide Kafka consumers and producers with access to warehouse databases.",
+                "Optimized application performance by conducting load tests with JMeter.",
+                "Integrated Datadog into the application to monitor performance metrics and logs.",
+                "Developed an email notification system to alert the team of failures in the production environment.",
+                "Implemented API endpoints to manage Kafka message queue offsets.",
+                "Implemented an automation suite to test data synchronization through Kafka queues."
             ]
         },
         {
