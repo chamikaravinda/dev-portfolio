@@ -94,9 +94,11 @@ const About = () => {
                         </p>
 
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                            Currently contributing as an <span className="text-foreground font-semibold"> Associate Technical Lead </span> to the warehouse management system of the world&apos;s largest food distributor,
-                            <span className="text-foreground font-semibold"> Sysco. </span> Started as a Junior Software Engineer, helping to modernize a legacy monolithic application.
-                            Now collaborating with cross-functional teams to design and implement new features that have a multi-million-dollar impact.
+                            Currently an <span className="text-foreground font-semibold"> Associate Technical Lead </span> at Sysco Labs Sri Lanka,
+                            driving supply chain optimization for <span className="text-foreground font-semibold"> Sysco. </span>,
+                            a Fortune 500 global food distribution leader. Progressed from Junior Software Engineer, playing a key role in modernizing a
+                            legacy monolithic application, to partnering with cross-functional teams to design and deliver high-impact features that
+                            generate multi-million-dollar business value.
                         </p>
                     </div>
                 </div>
